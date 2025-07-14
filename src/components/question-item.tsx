@@ -1,4 +1,4 @@
-import { Bot, Loader2, MessageSquare } from "lucide-react";
+import { Bot, Loader, MessageSquare } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { dayjs } from "@/lib/dayjs";
 
@@ -48,7 +48,7 @@ export function QuestionItem({ question }: QuestionItemProps) {
                 <div className="text-muted-foreground">
                   {question.isGeneratingAnswer ? (
                     <div className="flex items-center space-x-2">
-                      <Loader2 className="size-4 animate-spin text-primary" />
+                      <Loader className="size-4 animate-spin text-primary" />
                       <span className="text-primary text-sm italic">
                         Gerando resposta...
                       </span>
